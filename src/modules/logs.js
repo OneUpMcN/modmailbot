@@ -63,7 +63,7 @@ module.exports = ({ bot, knex, config, commands }) => {
       if (! thread) return;
     }
 
-    const logUrl = await thread.getLogUrl();
+    const logUrl = 'Message Rat for a comprehensive list of this users logs';
     const query = [];
     if (args.verbose) query.push('verbose=1');
     if (args.simple) query.push('simple=1');
